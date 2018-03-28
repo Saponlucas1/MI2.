@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="nl">
+	<head>
+		<meta charset="utf-8" >
+		<meta name="description" content="beschrijving van de webpagina" >
+		<meta name="keywords" content="trefwoorden, gescheiden, door, komma's">
+        <meta name="viewport" content="width=device-width, height=devicheight" />
+		<title>Luis Sapon Lucas</title>
+
+	</head>
+
+	<body>
+        <div id = "mainChessBoard"></div>
+        
+        
+        <style type="text/css">
+        #mainChessBoard
+            {
+                width: 160px;
+                height: 160px;
+                border: 1px solid black;
+                clear: both;
+            }
+            
+            div{
+                width: 20px;
+                height: 20px;
+                float: left;
+            }
+            
+        
+        
+        </style>
+        
+    <script type="text/javascript">
+        for (var i= 0; i<64; i++){
+                document.getElementById("mainChessBoard").appendChild(document.createElement("div")).style.backgroundColor = parseInt((i/ 8) + i) % 2 == 0 ? '#CCFF33' : '#66FF33';
+            }
+   </script>
+        
+    
+        <br>
+        
+        
+        
+            <div id = "mainDamsBoard"></div>
+        
+        <style type="text/css">
+        #mainDamsBoard
+            {
+                width: 200px;
+                height: 200px;
+                border: 1px solid black;
+                clear: both;
+            }
+            
+            div{
+                width: 20px;
+                height: 20px;
+                float: right;
+            }
+        
+        
+        </style>
+        
+    <script type="text/javascript">
+        var counter = 1; 
+        
+        for (var i= 0; i<100; i++){
+                document.getElementById("mainDamsBoard").appendChild(document.createElement("div")).style.backgroundColor = parseInt((i/ 10) + i) % 2 == 0 ? 'grey' : 'white';
+            }
+   </script>
+        
+        
+	</body>
+</html>
