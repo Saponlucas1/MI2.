@@ -2,21 +2,90 @@
 <html lang="nl">
 
 <head>
+    <meta charset="utf-8" />
     <title>Spel Luis Sapon Lucas</title>
     <script src="http://code.jquery.com/jquery-1.11.2.js" language="javascript" type="text/javascript"></script>
     <script src="spel.js" language="javascript" type="text/javascript"></script>
     <link href="stijlblad.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/framework7.material.min.css">
+    <link rel="stylesheet" href="Css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="Css/my-app.css">
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <style>
+    footer {    
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  left: 0;
+  text-align: center;
+}
+    </style>
 </head>
 
-<body>
+<body class>
+    <div class="panel-overlay"></div>
+    <div id="panelLeft" class="panel panel-left panel-reveal">
+        <p>Left panel</p>
+    </div>
+    <div class="panel panel-right panel-cover">
+<div data-role="page" id="highscoreDB">
+			<div data-role="header" data-position="fixed" >
+				<h1>Highscore</h1>
+			</div>
+			<div data-role="content">
+				<table id="highscoreTableDB">
+					<thead>
+						<tr>
+							<th>Naam</th>
+							<th>Score</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
 
-    <div id="background">
+		</div>
+    </div>
+    <div class="views">
+        <div class="view view-main">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding"> Menu</div>
+                    <div class="right"> <a href="#" class="link icon-only" onclick=""><i class="icon icon-bars"></i></a> </div>
+                </div>
+            </div>
+            <div class="toolbar">
+                <div class="toolbar-inner"> <a href="#" class=" button link icon-only open-panel" onclick="">Left panel</a> <a href="#" class="button" onclick="">///</a> <a href="#" data-panel="right" class="button open-panel">Highscore</a> </div>
+            </div>
+            <div class="page-content center" >
+                
+                    <div id="background">
         <h1>Memory game</h1>
+                        
+                        <div class="persoon">
+                            <div>
+                                <h2>Geef hieronder uw naam in:</h2> </div>
+                            <div>
+                                <input name="name" type="text" class="inputtextfield" id="name" size="25" /> </div>
+                        </div>
+                        
         <h2>We moeten de volgorde van de groene cirkels onthouden <br>en herhaal de reeks door erop te klikken.<br>Je kunt tot 7 X 7 geraken.</h2>
 
-        <div class="container">
+        <div class="container" id="spel">
 
-            <div class="spel"></div>
+            <div class="spel" ></div>
 
 
         </div>
@@ -24,8 +93,15 @@
         
         
     </div>
-
-
+                
+                <footer bottum="10px">
+                    <p>&copy; Copyright by Luis Sapon Lucas</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
 </body>
 
 </html>
