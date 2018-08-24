@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Spel Luis Sapon Lucas</title>
+    <script src="http://code.jquery.com/jquery-1.11.2.js" language="javascript" type="text/javascript"></script>
+    <script src="spel.js" language="javascript" type="text/javascript"></script>
+    <link href="stijlblad.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="Css/framework7.material.min.css">
+    <link rel="stylesheet" href="Css/framework7.material.colors.min.css">
+    <link rel="stylesheet" href="Css/my-app.css">
+    <link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css" />
+    <script src="js/jquery-3.1.1.min.js"></script>
+    <script src="js/jquery-1.11.2.min.js"></script>
+    <style>
+    footer {    
+  position: absolute;
+  right: 0;
+  bottom: 40px;
+  left: 0;
+  text-align: center;
+}
+    </style>
+</head>
+
+<body class>
+    <div class="panel-overlay"></div>
+    <div id="panelLeft" class="panel panel-left panel-reveal">
+        <p>Left panel</p>
+    </div>
+    <div class="panel panel-right panel-cover">
+<div data-role="page" id="highscoreDB">
+			<div data-role="header" data-position="fixed" >
+				<h1>Highscore</h1>
+			</div>
+			<div data-role="content">
+				<table id="highscoreTableDB">
+					<thead>
+						<tr>
+							<th>Naam</th>
+							<th>Score</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td></td>
+							<td></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			
+
+		</div>
+    </div>
+    <div class="views">
+        <div class="view view-main">
+            <div class="navbar">
+                <div class="navbar-inner">
+                    <div class="center sliding"> Menu</div>
+                    <div class="right"> <a href="#" class="link icon-only" onclick=""><i class="icon icon-bars"></i></a> </div>
+                </div>
+            </div>
+            <div class="toolbar">
+                <div class="toolbar-inner"> <a href="#" class=" button link icon-only open-panel" onclick="">Left panel</a> <a href="#" class="button" onclick="">///</a> <a href="#" data-panel="right" class="button open-panel">Highscore</a> </div>
+            </div>
+            <div class="page-content center" >
+                
+                    <div id="background">
+        <h1>Memory game</h1>
+                        
+                       
+                        
+        <h2>We moeten de volgorde van de groene cirkels onthouden <br>en herhaal de reeks door erop te klikken.<br>Je kunt tot 7 X 7 geraken.</h2>
+        
+        <h3>
+In vergelijking tov de vorige examenperiode heb ik geprobeeerd om een paar elementen te verbeteren/toevoegen. <br>
+Ten eerste heb ik mijn spel overgeschakeld naar een framework7 template. Omdat ik zo bijvoorbeeld mijn alert op een mooier manier kan laten tonen. Ook heb ik dit willen doen omdat ik vind dat het zo netter gaat. En zo wou ik ook een high score toevoegen bij mijn right panel. Ten slotte heb ik mijn project willen implementeren in strict mode.
+Mijn High score is alleen gebruikelijk enkel op google Chrome omdat ik gebruik heb gemaakt van cokies van Google. Dus zal mijn high score alleen lokaal bruikbaar zijn. En dus kan de speler alleen in het begin zijn naam geven.
+Voor de Cookies heb ik alles moeten zoeken op internet, maar ik heb dit helemaal moeten aanpassen op mijn spel. Het moeilijkste was het implementeren van mijn functie ShowScore() hier maak ik mijn database. Ook had ik het moeilijk om al deze nieuwe elementen te implementeren in mijn code meer specifiek in mijn document.ready().
+Jammmer genoeg is het nog niet perfect. Mijn high score kan beter maar ik heb gewoon geen tijd meer. 
+</h3>
+
+        
+        </div>
+
+        
+        
+    </div>
+                
+                <footer bottum="10px">
+                    <p>&copy; Copyright by Luis Sapon Lucas</p>
+                </footer>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/framework7.min.js"></script>
+    <script type="text/javascript" src="js/my-app.js"></script>
+</body>
+
+</html>
